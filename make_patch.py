@@ -93,7 +93,7 @@ training_idx = idx[:train_size]
 test_idx = idx[train_size:test_size]
 
 train_loader = torch.utils.data.DataLoader(
-    dset.ImageFolder('./data/imagenetdata/val', transforms.Compose([
+    dset.ImageFolder('./imagenetdata/val', transforms.Compose([
         transforms.Scale(round(max(netClassifier.input_size)*1.050)),
         transforms.CenterCrop(max(netClassifier.input_size)),
         transforms.ToTensor(),
@@ -105,7 +105,7 @@ train_loader = torch.utils.data.DataLoader(
     num_workers=opt.workers, pin_memory=True)
  
 test_loader = torch.utils.data.DataLoader(
-    dset.ImageFolder('./data/imagenetdata/val', transforms.Compose([
+    dset.ImageFolder('./imagenetdata/val', transforms.Compose([
         transforms.Scale(round(max(netClassifier.input_size)*1.050)),
         transforms.CenterCrop(max(netClassifier.input_size)),
         transforms.ToTensor(),
