@@ -31,6 +31,6 @@ Square patches are a little more homogenous due to that I only rotate by multipl
 
 - Rather slow if max_count and conf_target are large.
 
-- Probably lots of redudant calls and variables.
+- Probably lots of redundant calls and variables.
 
 
