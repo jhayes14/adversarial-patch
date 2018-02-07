@@ -23,7 +23,7 @@ I managed to recreate the toaster example in the original paper. It looks slight
 
 Square patches are a little more homogenous due to that I only rotate by multiples of 90 degrees.
 
-![Alt text](1978_859_adversarial.png?raw=true "") This is also toaster
+![Alt text](1978_859_adversarial.png?raw=true "") This is also a toaster
 
 ## Issues:
 
