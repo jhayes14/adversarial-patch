@@ -32,8 +32,8 @@ parser.add_argument('--max_count', type=int, default=1000, help='max number of i
 parser.add_argument('--patch_type', type=str, default='circle', help='patch type: circle or square')
 parser.add_argument('--patch_size', type=float, default=0.05, help='patch size. E.g. 0.05 ~= 5% of image ')
 
-parser.add_argument('--train_size', type=float, default=2000, help='Number of training images')
-parser.add_argument('--test_size', type=float, default=2000, help='Number of test images')
+parser.add_argument('--train_size', type=int, default=2000, help='Number of training images')
+parser.add_argument('--test_size', type=int, default=2000, help='Number of test images')
 
 parser.add_argument('--image_size', type=int, default=299, help='the height / width of the input image to network')
 
