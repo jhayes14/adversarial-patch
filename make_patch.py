@@ -277,7 +277,7 @@ if __name__ == '__main__':
     if patch_type == 'circle':
         patch, patch_shape = init_patch_circle(image_size, patch_size) 
     elif patch_type == 'square':
-        patch, patch_shape = init_patch_circle(image_size, patch_size) 
+        patch, patch_shape = init_patch_square(image_size, patch_size) 
     else:
         sys.exit("Please choose a square or circle patch")
     
