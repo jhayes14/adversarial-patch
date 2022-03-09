@@ -90,7 +90,7 @@ normalize = transforms.Normalize(mean=netClassifier.mean,
 idx = np.arange(50000)
 np.random.shuffle(idx)
 training_idx = idx[:train_size]
-test_idx = idx[train_size:test_size]
+test_idx = idx[train_size:(train_size + test_size)]
 
 train_loader = torch.utils.data.DataLoader(
     dset.ImageFolder('./imagenetdata/val', transforms.Compose([
